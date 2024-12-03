@@ -19,9 +19,12 @@ This repository implements authentication using session cookies between separate
 
 ### Backend(Hono)
 
+`npx drizzle-kit migrate` will generate `test.db` for local development (docs: https://orm.drizzle.team/docs/kit-overview)
+
 ```bash
 cd backend
 npm install
+npx drizzle-kit migrate
 npm run dev
 ```
 
@@ -29,12 +32,9 @@ server will be running on http://localhost:4000
 
 ### Frontend(Nextjs)
 
-`npx drizzle-kit migrate` will generate ** test.db** for local development https://orm.drizzle.team/docs/kit-overview
-
 ```bash
 cd frontend
 npm install
-npx drizzle-kit migrate
 npm run dev
 ```
 
